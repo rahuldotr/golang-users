@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: user-manage-app
+    labels:
+        app: user-manage-app
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: user-manage-app
+    template:
+        metadata:
+            labels:
+                app: user-manage-app
+        spec:
+            containers:
+            -   name: user-manage-container
+                image: user-manage
+                imagePullPolicy: Never
+                ports:
+                -   containerPort: 8080
