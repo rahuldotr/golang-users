@@ -22,6 +22,6 @@ jobs:
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Push Docker image to Docker Hub
-      run: docker push user-manage:latest
+      run: docker push rahuldotr/user-manage:latest
 
       
