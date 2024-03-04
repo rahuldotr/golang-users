@@ -31,4 +31,4 @@ To apply the migration, execute the following command:
 
 ```docker-compose exec edgedb /bin/bash -c "edgedb --tls-security=insecure -H localhost -P 5656 --password -u alokin -d u_data migrate"```
 
-This command will apply the migration to the database.
+This command will apply the migration to the database. 
